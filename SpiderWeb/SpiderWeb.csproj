@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{676A7F6C-85EB-46E7-BA26-A938F2B1149F}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpiderWeb</RootNamespace>
+    <AssemblyName>SpiderWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\textures\particle_spark.png" />
+    <Content Include="assets\textures\spider.png" />
+    <Content Include="scripts\jslib\aabbtree.js" />
+    <Content Include="scripts\jslib\animation.js" />
+    <Content Include="scripts\jslib\animationmanager.js" />
+    <Content Include="scripts\jslib\assetcache.js" />
+    <Content Include="scripts\jslib\assettracker.js" />
+    <Content Include="scripts\jslib\boxtree.js" />
+    <Content Include="scripts\jslib\camera.js" />
+    <Content Include="scripts\jslib\canvas.js" />
+    <Content Include="scripts\jslib\capturegraphicsdevice.js" />
+    <Content Include="scripts\jslib\charactercontroller.js" />
+    <Content Include="scripts\jslib\debug.js" />
+    <Content Include="scripts\jslib\debuggingtools.js" />
+    <Content Include="scripts\jslib\defaultrendering.js" />
+    <Content Include="scripts\jslib\deferredrendering.js" />
+    <Content Include="scripts\jslib\draw2d.js" />
+    <Content Include="scripts\jslib\drawprimitives.js" />
+    <Content Include="scripts\jslib\dumpindexbuffer.js" />
+    <Content Include="scripts\jslib\dumpshader.js" />
+    <Content Include="scripts\jslib\dumptexture.js" />
+    <Content Include="scripts\jslib\dumpvertexbuffer.js" />
+    <Content Include="scripts\jslib\effectmanager.js" />
+    <Content Include="scripts\jslib\floor.js" />
+    <Content Include="scripts\jslib\fontmanager.js" />
+    <Content Include="scripts\jslib\forwardrendering.js" />
+    <Content Include="scripts\jslib\geometry.js" />
+    <Content Include="scripts\jslib\indexbuffermanager.js" />
+    <Content Include="scripts\jslib\light.js" />
+    <Content Include="scripts\jslib\loadingscreen.js" />
+    <Content Include="scripts\jslib\material.js" />
+    <Content Include="scripts\jslib\mouseforces.js" />
+    <Content Include="scripts\jslib\networklatencysimulator.js" />
+    <Content Include="scripts\jslib\observer.js" />
+    <Content Include="scripts\jslib\physics2ddebugdraw.js" />
+    <Content Include="scripts\jslib\physics2ddevice.js" />
+    <Content Include="scripts\jslib\physicsmanager.js" />
+    <Content Include="scripts\jslib\posteffects.js" />
+    <Content Include="scripts\jslib\renderingcommon.js" />
+    <Content Include="scripts\jslib\requesthandler.js" />
+    <Content Include="scripts\jslib\resourceloader.js" />
+    <Content Include="scripts\jslib\scene.js" />
+    <Content Include="scripts\jslib\scenedebugging.js" />
+    <Content Include="scripts\jslib\scenenode.js" />
+    <Content Include="scripts\jslib\services\badgemanager.js" />
+    <Content Include="scripts\jslib\services\datasharemanager.js" />
+    <Content Include="scripts\jslib\services\gameprofilemanager.js" />
+    <Content Include="scripts\jslib\services\gamesession.js" />
+    <Content Include="scripts\jslib\services\leaderboardmanager.js" />
+    <Content Include="scripts\jslib\services\mappingtable.js" />
+    <Content Include="scripts\jslib\services\multiplayersession.js" />
+    <Content Include="scripts\jslib\services\multiplayersessionmanager.js" />
+    <Content Include="scripts\jslib\services\notificationsmanager.js" />
+    <Content Include="scripts\jslib\services\osdlib.js" />
+    <Content Include="scripts\jslib\services\sessiontoken.js" />
+    <Content Include="scripts\jslib\services\storemanager.js" />
+    <Content Include="scripts\jslib\services\turbulenzbridge.js" />
+    <Content Include="scripts\jslib\services\turbulenzservices.js" />
+    <Content Include="scripts\jslib\services\userdatamanager.js" />
+    <Content Include="scripts\jslib\shadermanager.js" />
+    <Content Include="scripts\jslib\shadowmapping.js" />
+    <Content Include="scripts\jslib\simplerendering.js" />
+    <Content Include="scripts\jslib\soundmanager.js" />
+    <Content Include="scripts\jslib\textureeffects.js" />
+    <Content Include="scripts\jslib\texturemanager.js" />
+    <Content Include="scripts\jslib\utilities.js" />
+    <Content Include="scripts\jslib\vertexbuffermanager.js" />
+    <Content Include="scripts\jslib\vmath.js" />
+    <Content Include="scripts\jslib\webgl\ddsloader.js" />
+    <Content Include="scripts\jslib\webgl\graphicsdevice.js" />
+    <Content Include="scripts\jslib\webgl\inputdevice.js" />
+    <Content Include="scripts\jslib\webgl\networkdevice.js" />
+    <Content Include="scripts\jslib\webgl\physicsdevice.js" />
+    <Content Include="scripts\jslib\webgl\sounddevice.js" />
+    <Content Include="scripts\jslib\webgl\soundtarloader.js" />
+    <Content Include="scripts\jslib\webgl\tarloader.js" />
+    <Content Include="scripts\jslib\webgl\tgaloader.js" />
+    <Content Include="scripts\jslib\webgl\touch.js" />
+    <Content Include="scripts\jslib\webgl\touchevent.js" />
+    <Content Include="scripts\jslib\webgl\turbulenzengine.js" />
+    <Content Include="scripts\src\game.js" />
+    <Content Include="scripts\src\utility.js" />
+    <Content Include="scripts\_references.js" />
+    <Content Include="index.html" />
+    <Content Include="styles.css" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51540/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
