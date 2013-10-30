@@ -80,4 +80,5 @@
 /// <reference path="jslib/webgl/turbulenzengine.js" />
 
 /// <reference path="src/utility.js" />
+/// <reference path="src/spider.js" />
 

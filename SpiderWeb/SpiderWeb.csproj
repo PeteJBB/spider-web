@@ -191,8 +191,12 @@
     <Content Include="scripts\jslib\webgl\touch.js" />
     <Content Include="scripts\jslib\webgl\touchevent.js" />
     <Content Include="scripts\jslib\webgl\turbulenzengine.js" />
+    <Content Include="scripts\src\cloth.js" />
     <Content Include="scripts\src\game.js" />
+    <Content Include="scripts\src\spider.js" />
+    <Content Include="scripts\src\sprites.js" />
     <Content Include="scripts\src\utility.js" />
+    <Content Include="scripts\src\web.js" />
     <Content Include="scripts\_references.js" />
     <Content Include="index.html" />
     <Content Include="styles.css" />

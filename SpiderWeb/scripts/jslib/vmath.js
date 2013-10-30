@@ -4482,6 +4482,6 @@ if(typeof Float32Array !== "undefined") {
 }
 // If the plugin has a 'getNativeMathDevice' method then VMath should
 // replace the standard MathDevice.
-if(TurbulenzEngine.hasOwnProperty('VMath')) {
-    TurbulenzEngine.VMath = VMath;
-}
+//if(TurbulenzEngine.hasOwnProperty('VMath')) {
+//    TurbulenzEngine.VMath = VMath;
+//}
